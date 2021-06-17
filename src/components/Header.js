@@ -35,13 +35,15 @@ function Header(props) {
             <p>Returns</p>
             <p>& Orders</p>
           </div>
-          <div className='link'>
-            <ShoppingCartIcon className="h-10"/>
-            <p>Basket</p>
+          <div className='link relative flex items-center h-14'>
+            <span className="w-6 absolute top-0 right-0 text-red-500 font-bold md:right-11 bg-yellow-400 text-center rounded-full" >0</span>
+            <ShoppingCartIcon className="h-14"/>
+            <p className="mt-2 hidden md:inline font-extrabold md:text-sm">Basket</p>
           </div>
         </div>
       </div>
 
+      {/* Bottom Nav */}
       <div></div>
     </header>
   );
