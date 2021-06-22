@@ -22,29 +22,50 @@ function Header(props) {
         </div>
         {/* Search Left */}
         <div className="hidden sm:flex items-center flex-grow cursor-pointer h-10 rounded-md bg-yellow-400 hover:bg-yellow-500">
-          <input className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md" type="text" />
+          <input
+            className="p-2 h-full w-6 flex-grow flex-shrink rounded-l-md"
+            type="text"
+          />
           <SearchIcon className="h-12 p-4" />
         </div>
         {/* Search Right */}
         <div className="text-white flex items-center space-x-6 mx-6 whitespace-nowrap">
-          <div className='link'>
+          <div className="link">
             <p>Hello GF</p>
             <p>Account & Lists</p>
           </div>
-          <div className='link'>
+          <div className="link">
             <p>Returns</p>
             <p>& Orders</p>
           </div>
-          <div className='link relative flex items-center h-14'>
-            <span className="w-6 absolute top-0 right-0 text-red-500 font-bold md:right-11 bg-yellow-400 text-center rounded-full" >0</span>
-            <ShoppingCartIcon className="h-14"/>
-            <p className="mt-2 hidden md:inline font-extrabold md:text-sm">Basket</p>
+          <div className="link relative flex items-center h-14">
+            <span className="w-6 absolute top-0 right-0 text-red-500 font-bold md:right-11 bg-yellow-400 text-center rounded-full">
+              0
+            </span>
+            <ShoppingCartIcon className="h-14" />
+            <p className="mt-2 hidden md:inline font-extrabold md:text-sm">
+              Basket
+            </p>
           </div>
         </div>
       </div>
 
       {/* Bottom Nav */}
-      <div></div>
+      <div className="flex items-center bg-amazon_blue-light text-white text- space-x-3 pl-6">
+        <p className="link flex items-center">
+          <MenuIcon className="h-6 mr-1" />
+          All
+        </p>
+        <p className="link">Video</p>
+        <p className="link">Business</p>
+        <p className="link">Deals</p>
+        <p className="link hidden lg:inline-flex">Electronics</p>
+        <p className="link hidden lg:inline-flex">Food</p>
+        <p className="link hidden lg:inline-flex">Plus</p>
+        <p className="link hidden lg:inline-flex">Buy Again</p>
+        <p className="link hidden lg:inline-flex">Shopper Tool</p>
+        <p className="link hidden lg:inline-flex">Health & Personal Care</p>
+      </div>
     </header>
   );
 }
